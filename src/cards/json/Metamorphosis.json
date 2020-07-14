@@ -1,0 +1,9 @@
+{
+  "name": "Metamorphosis",
+  "type": "Spell",
+  "rarity": "legendary",
+  "heroClass": "Neutral",
+  "manaCost": 7,
+  "description": "Swap your Hero Power to 'Deal 5 damage'. After 2 uses, swap it back.",
+  "price": 5
+}

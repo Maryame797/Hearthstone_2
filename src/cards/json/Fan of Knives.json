@@ -1,0 +1,9 @@
+{
+  "name": "Fan of Knives",
+  "type": "Spell",
+  "rarity": "common",
+  "heroClass": "Neutral",
+  "manaCost": 3,
+  "description": "Deal 1 damage to all enemy minions. Draw a card. ",
+  "price": 5
+}

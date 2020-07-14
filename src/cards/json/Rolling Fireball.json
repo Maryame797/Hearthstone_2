@@ -1,0 +1,9 @@
+{
+  "name": "Rolling Fireball",
+  "manaCost": 3,
+  "type": "Spell",
+  "heroClass": "Neutral",
+  "rarity": "epic",
+  "description": "Deal 4 damage to a minion. Any excess damage continues to the left or right.",
+  "price": 5
+}

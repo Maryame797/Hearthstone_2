@@ -1,0 +1,11 @@
+{
+  "name": "Water Elemental",
+  "type": "Minion",
+  "rarity": "common",
+  "heroClass": "Neutral",
+  "manaCost":5,
+  "description": "Freeze any character damaged by this minion.",
+  "attack": 3,
+  "HP": 5,
+  "price": 5
+}

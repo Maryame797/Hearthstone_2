@@ -1,0 +1,10 @@
+{
+  "name": "Blood Fury",
+  "type": "Weapon",
+  "rarity": "common",
+  "heroClass": "Neutral",
+  "manaCost": 3,
+  "attack":3,
+  "HP": 8,
+  "price": 5
+}

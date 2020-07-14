@@ -1,0 +1,9 @@
+{
+  "name": "Snap Freeze",
+  "type": "Spell",
+  "rarity": "common",
+  "heroClass": "Neutral",
+  "manaCost":2,
+  "description": "Freeze a minion. If it's already frozen, destroy it.",
+  "price": 5
+}

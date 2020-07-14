@@ -1,0 +1,11 @@
+{
+  "name": "Swamp King Dred" ,
+  "type": "Minion",
+  "rarity": "legendary",
+  "heroClass": "Hunter",
+  "manaCost" :7,
+  "description": "After your opponent plays a minion, attack it.",
+  "attack": 9,
+  "HP": 9,
+  "price": 5
+}

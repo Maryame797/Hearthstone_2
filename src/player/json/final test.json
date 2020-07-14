@@ -1,0 +1,508 @@
+{
+  "userName": "final test",
+  "password": "-1919488772",
+  "currentHero": {
+    "name": "Warlock",
+    "HP": 35,
+    "deck": [],
+    "defence": 0
+  },
+  "openHeroes": [
+    {
+      "name": "Warlock",
+      "HP": 35,
+      "deck": [],
+      "defence": 0
+    }
+  ],
+  "gems": 30,
+  "currentCards": [
+    {
+      "name": "Dreadscale",
+      "manaCost": 3,
+      "type": "Minion",
+      "heroClass": "Warlock",
+      "rarity": "legendary",
+      "price": 5,
+      "playes": 0,
+      "rarityNumber": 0
+    },
+    {
+      "name": "Fan of Knives",
+      "manaCost": 3,
+      "type": "Spell",
+      "heroClass": "Neutral",
+      "rarity": "common",
+      "price": 5,
+      "playes": 0,
+      "rarityNumber": 0
+    },
+    {
+      "name": "Metamorphosis",
+      "manaCost": 7,
+      "type": "Spell",
+      "heroClass": "Neutral",
+      "rarity": "legendary",
+      "price": 5,
+      "playes": 0,
+      "rarityNumber": 0
+    },
+    {
+      "name": "Omega Medic",
+      "manaCost": 3,
+      "type": "Minion",
+      "heroClass": "Neutral",
+      "rarity": "rare",
+      "price": 5,
+      "playes": 0,
+      "rarityNumber": 1
+    },
+    {
+      "name": "Vaporize",
+      "manaCost": 3,
+      "type": "Spell",
+      "heroClass": "Mage",
+      "rarity": "rare",
+      "price": 5,
+      "playes": 0,
+      "rarityNumber": 1
+    },
+    {
+      "name": "Mortal Coil",
+      "manaCost": 2,
+      "type": "Spell",
+      "heroClass": "Neutral",
+      "rarity": "common",
+      "price": 5,
+      "playes": 0,
+      "rarityNumber": 0
+    },
+    {
+      "name": "Spirit of the Bat",
+      "manaCost": 2,
+      "type": "Minion",
+      "heroClass": "Neutral",
+      "rarity": "rare",
+      "price": 5,
+      "playes": 0,
+      "rarityNumber": 0
+    },
+    {
+      "name": "Water Elemental",
+      "manaCost": 5,
+      "type": "Minion",
+      "heroClass": "Neutral",
+      "rarity": "common",
+      "price": 5,
+      "playes": 0,
+      "rarityNumber": 0
+    },
+    {
+      "name": "Awaken",
+      "manaCost": 4,
+      "type": "Weapon",
+      "heroClass": "Warlock",
+      "rarity": "common",
+      "price": 5,
+      "playes": 0,
+      "rarityNumber": 0
+    },
+    {
+      "name": "Prophet Velen",
+      "manaCost": 5,
+      "type": "Spell",
+      "heroClass": "Neutral",
+      "rarity": "epic",
+      "price": 5,
+      "playes": 0,
+      "rarityNumber": 0
+    },
+    {
+      "name": "Supercollider",
+      "manaCost": 5,
+      "type": "Weapon",
+      "heroClass": "Rogue",
+      "rarity": "epic",
+      "price": 5,
+      "playes": 0,
+      "rarityNumber": 0
+    },
+    {
+      "name": "Polymorph",
+      "manaCost": 4,
+      "type": "Spell",
+      "heroClass": "Mage",
+      "rarity": "rare",
+      "price": 5,
+      "playes": 0,
+      "rarityNumber": 0
+    },
+    {
+      "name": "Swamp King Dred",
+      "manaCost": 7,
+      "type": "Minion",
+      "heroClass": "Hunter",
+      "rarity": "legendary",
+      "price": 5,
+      "playes": 0,
+      "rarityNumber": 0
+    },
+    {
+      "name": "Deadly Shot",
+      "manaCost": 3,
+      "type": "Spell",
+      "heroClass": "Hunter",
+      "rarity": "common",
+      "price": 5,
+      "playes": 0,
+      "rarityNumber": 0
+    }
+  ],
+  "userID": "200506210725",
+  "userDecks": [
+    {
+      "name": "final",
+      "hero": {
+        "name": "Rogue",
+        "HP": 30,
+        "deck": [],
+        "defence": 0
+      },
+      "cardsInDeck": [
+        {
+          "name": "Mortal Coil",
+          "manaCost": 2,
+          "type": "Spell",
+          "heroClass": "Neutral",
+          "rarity": "common",
+          "price": 5,
+          "playes": 0,
+          "rarityNumber": 0
+        },
+        {
+          "name": "Fan of Knives",
+          "manaCost": 3,
+          "type": "Spell",
+          "heroClass": "Neutral",
+          "rarity": "common",
+          "price": 5,
+          "playes": 0,
+          "rarityNumber": 0
+        },
+        {
+          "name": "Metamorphosis",
+          "manaCost": 7,
+          "type": "Spell",
+          "heroClass": "Neutral",
+          "rarity": "legendary",
+          "price": 5,
+          "playes": 0,
+          "rarityNumber": 0
+        },
+        {
+          "name": "Omega Medic",
+          "manaCost": 3,
+          "type": "Minion",
+          "heroClass": "Neutral",
+          "rarity": "rare",
+          "price": 5,
+          "playes": 0,
+          "rarityNumber": 1
+        },
+        {
+          "name": "Fan of Knives",
+          "manaCost": 3,
+          "type": "Spell",
+          "heroClass": "Neutral",
+          "rarity": "common",
+          "price": 5,
+          "playes": 0,
+          "rarityNumber": 0
+        },
+        {
+          "name": "Metamorphosis",
+          "manaCost": 7,
+          "type": "Spell",
+          "heroClass": "Neutral",
+          "rarity": "legendary",
+          "price": 5,
+          "playes": 0,
+          "rarityNumber": 0
+        },
+        {
+          "name": "Supercollider",
+          "manaCost": 5,
+          "type": "Weapon",
+          "heroClass": "Rogue",
+          "rarity": "epic",
+          "price": 5,
+          "playes": 0,
+          "rarityNumber": 0
+        },
+        {
+          "name": "Prophet Velen",
+          "manaCost": 5,
+          "type": "Spell",
+          "heroClass": "Neutral",
+          "rarity": "epic",
+          "price": 5,
+          "playes": 0,
+          "rarityNumber": 0
+        },
+        {
+          "name": "Omega Medic",
+          "manaCost": 3,
+          "type": "Minion",
+          "heroClass": "Neutral",
+          "rarity": "rare",
+          "price": 5,
+          "playes": 0,
+          "rarityNumber": 1
+        },
+        {
+          "name": "Supercollider",
+          "manaCost": 5,
+          "type": "Weapon",
+          "heroClass": "Rogue",
+          "rarity": "epic",
+          "price": 5,
+          "playes": 0,
+          "rarityNumber": 0
+        },
+        {
+          "name": "Spirit of the Bat",
+          "manaCost": 2,
+          "type": "Minion",
+          "heroClass": "Neutral",
+          "rarity": "rare",
+          "price": 5,
+          "playes": 0,
+          "rarityNumber": 0
+        },
+        {
+          "name": "Water Elemental",
+          "manaCost": 5,
+          "type": "Minion",
+          "heroClass": "Neutral",
+          "rarity": "common",
+          "price": 5,
+          "playes": 0,
+          "rarityNumber": 0
+        },
+        {
+          "name": "Water Elemental",
+          "manaCost": 5,
+          "type": "Minion",
+          "heroClass": "Neutral",
+          "rarity": "common",
+          "price": 5,
+          "playes": 0,
+          "rarityNumber": 0
+        },
+        {
+          "name": "Spirit of the Bat",
+          "manaCost": 2,
+          "type": "Minion",
+          "heroClass": "Neutral",
+          "rarity": "rare",
+          "price": 5,
+          "playes": 0,
+          "rarityNumber": 0
+        },
+        {
+          "name": "Mortal Coil",
+          "manaCost": 2,
+          "type": "Spell",
+          "heroClass": "Neutral",
+          "rarity": "common",
+          "price": 5,
+          "playes": 0,
+          "rarityNumber": 0
+        }
+      ],
+      "manaAverage": 0,
+      "wins": 0,
+      "playes": 0,
+      "rate": 0,
+      "cardPlayes": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "currentDeck": {
+    "name": "final",
+    "hero": {
+      "name": "Rogue",
+      "HP": 30,
+      "deck": [],
+      "defence": 0
+    },
+    "cardsInDeck": [
+      {
+        "name": "Mortal Coil",
+        "manaCost": 2,
+        "type": "Spell",
+        "heroClass": "Neutral",
+        "rarity": "common",
+        "price": 5,
+        "playes": 0,
+        "rarityNumber": 0
+      },
+      {
+        "name": "Fan of Knives",
+        "manaCost": 3,
+        "type": "Spell",
+        "heroClass": "Neutral",
+        "rarity": "common",
+        "price": 5,
+        "playes": 0,
+        "rarityNumber": 0
+      },
+      {
+        "name": "Metamorphosis",
+        "manaCost": 7,
+        "type": "Spell",
+        "heroClass": "Neutral",
+        "rarity": "legendary",
+        "price": 5,
+        "playes": 0,
+        "rarityNumber": 0
+      },
+      {
+        "name": "Omega Medic",
+        "manaCost": 3,
+        "type": "Minion",
+        "heroClass": "Neutral",
+        "rarity": "rare",
+        "price": 5,
+        "playes": 0,
+        "rarityNumber": 1
+      },
+      {
+        "name": "Fan of Knives",
+        "manaCost": 3,
+        "type": "Spell",
+        "heroClass": "Neutral",
+        "rarity": "common",
+        "price": 5,
+        "playes": 0,
+        "rarityNumber": 0
+      },
+      {
+        "name": "Metamorphosis",
+        "manaCost": 7,
+        "type": "Spell",
+        "heroClass": "Neutral",
+        "rarity": "legendary",
+        "price": 5,
+        "playes": 0,
+        "rarityNumber": 0
+      },
+      {
+        "name": "Supercollider",
+        "manaCost": 5,
+        "type": "Weapon",
+        "heroClass": "Rogue",
+        "rarity": "epic",
+        "price": 5,
+        "playes": 0,
+        "rarityNumber": 0
+      },
+      {
+        "name": "Prophet Velen",
+        "manaCost": 5,
+        "type": "Spell",
+        "heroClass": "Neutral",
+        "rarity": "epic",
+        "price": 5,
+        "playes": 0,
+        "rarityNumber": 0
+      },
+      {
+        "name": "Omega Medic",
+        "manaCost": 3,
+        "type": "Minion",
+        "heroClass": "Neutral",
+        "rarity": "rare",
+        "price": 5,
+        "playes": 0,
+        "rarityNumber": 1
+      },
+      {
+        "name": "Supercollider",
+        "manaCost": 5,
+        "type": "Weapon",
+        "heroClass": "Rogue",
+        "rarity": "epic",
+        "price": 5,
+        "playes": 0,
+        "rarityNumber": 0
+      },
+      {
+        "name": "Spirit of the Bat",
+        "manaCost": 2,
+        "type": "Minion",
+        "heroClass": "Neutral",
+        "rarity": "rare",
+        "price": 5,
+        "playes": 0,
+        "rarityNumber": 0
+      },
+      {
+        "name": "Water Elemental",
+        "manaCost": 5,
+        "type": "Minion",
+        "heroClass": "Neutral",
+        "rarity": "common",
+        "price": 5,
+        "playes": 0,
+        "rarityNumber": 0
+      },
+      {
+        "name": "Water Elemental",
+        "manaCost": 5,
+        "type": "Minion",
+        "heroClass": "Neutral",
+        "rarity": "common",
+        "price": 5,
+        "playes": 0,
+        "rarityNumber": 0
+      },
+      {
+        "name": "Spirit of the Bat",
+        "manaCost": 2,
+        "type": "Minion",
+        "heroClass": "Neutral",
+        "rarity": "rare",
+        "price": 5,
+        "playes": 0,
+        "rarityNumber": 0
+      },
+      {
+        "name": "Mortal Coil",
+        "manaCost": 2,
+        "type": "Spell",
+        "heroClass": "Neutral",
+        "rarity": "common",
+        "price": 5,
+        "playes": 0,
+        "rarityNumber": 0
+      }
+    ],
+    "manaAverage": 0,
+    "wins": 0,
+    "playes": 0,
+    "rate": 0,
+    "cardPlayes": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

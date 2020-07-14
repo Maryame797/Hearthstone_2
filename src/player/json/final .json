@@ -1,0 +1,314 @@
+{
+  "userName": "final ",
+  "password": "356211464",
+  "currentHero": {
+    "name": "Warlock",
+    "HP": 35,
+    "deck": [],
+    "defence": 0
+  },
+  "openHeroes": [
+    {
+      "name": "Warlock",
+      "HP": 35,
+      "deck": [],
+      "defence": 0
+    }
+  ],
+  "gems": 60,
+  "currentCards": [
+    {
+      "name": "Dreadscale",
+      "manaCost": 3,
+      "type": "Minion",
+      "heroClass": "Warlock",
+      "rarity": "legendary",
+      "price": 5,
+      "playes": 0,
+      "rarityNumber": 0
+    },
+    {
+      "name": "Fan of Knives",
+      "manaCost": 3,
+      "type": "Spell",
+      "heroClass": "Neutral",
+      "rarity": "common",
+      "price": 5,
+      "playes": 0,
+      "rarityNumber": 0
+    },
+    {
+      "name": "Metamorphosis",
+      "manaCost": 7,
+      "type": "Spell",
+      "heroClass": "Neutral",
+      "rarity": "legendary",
+      "price": 5,
+      "playes": 0,
+      "rarityNumber": 0
+    },
+    {
+      "name": "Omega Medic",
+      "manaCost": 3,
+      "type": "Minion",
+      "heroClass": "Neutral",
+      "rarity": "rare",
+      "price": 5,
+      "playes": 0,
+      "rarityNumber": 0
+    },
+    {
+      "name": "Vaporize",
+      "manaCost": 3,
+      "type": "Spell",
+      "heroClass": "Mage",
+      "rarity": "rare",
+      "price": 5,
+      "playes": 0,
+      "rarityNumber": 0
+    },
+    {
+      "name": "Squashling",
+      "manaCost": 2,
+      "type": "Minion",
+      "heroClass": "Neutral",
+      "rarity": "common",
+      "price": 5,
+      "playes": 0,
+      "rarityNumber": 0
+    },
+    {
+      "name": "Spirit of the Bat",
+      "manaCost": 2,
+      "type": "Minion",
+      "heroClass": "Neutral",
+      "rarity": "rare",
+      "price": 5,
+      "playes": 0,
+      "rarityNumber": 0
+    },
+    {
+      "name": "Water Elemental",
+      "manaCost": 5,
+      "type": "Minion",
+      "heroClass": "Neutral",
+      "rarity": "common",
+      "price": 5,
+      "playes": 0,
+      "rarityNumber": 0
+    }
+  ],
+  "userID": "200506211040",
+  "userDecks": [
+    {
+      "name": "final",
+      "hero": {
+        "name": "Priest",
+        "HP": 30,
+        "deck": [],
+        "defence": 0
+      },
+      "cardsInDeck": [
+        {
+          "name": "Omega Medic",
+          "manaCost": 3,
+          "type": "Minion",
+          "heroClass": "Neutral",
+          "rarity": "rare",
+          "price": 5,
+          "playes": 0,
+          "rarityNumber": 0
+        },
+        {
+          "name": "Omega Medic",
+          "manaCost": 3,
+          "type": "Minion",
+          "heroClass": "Neutral",
+          "rarity": "rare",
+          "price": 5,
+          "playes": 0,
+          "rarityNumber": 0
+        },
+        {
+          "name": "Spirit of the Bat",
+          "manaCost": 2,
+          "type": "Minion",
+          "heroClass": "Neutral",
+          "rarity": "rare",
+          "price": 5,
+          "playes": 0,
+          "rarityNumber": 0
+        },
+        {
+          "name": "Water Elemental",
+          "manaCost": 5,
+          "type": "Minion",
+          "heroClass": "Neutral",
+          "rarity": "common",
+          "price": 5,
+          "playes": 0,
+          "rarityNumber": 0
+        },
+        {
+          "name": "Squashling",
+          "manaCost": 2,
+          "type": "Minion",
+          "heroClass": "Neutral",
+          "rarity": "common",
+          "price": 5,
+          "playes": 0,
+          "rarityNumber": 0
+        },
+        {
+          "name": "Fan of Knives",
+          "manaCost": 3,
+          "type": "Spell",
+          "heroClass": "Neutral",
+          "rarity": "common",
+          "price": 5,
+          "playes": 0,
+          "rarityNumber": 0
+        },
+        {
+          "name": "Metamorphosis",
+          "manaCost": 7,
+          "type": "Spell",
+          "heroClass": "Neutral",
+          "rarity": "legendary",
+          "price": 5,
+          "playes": 0,
+          "rarityNumber": 0
+        },
+        {
+          "name": "Metamorphosis",
+          "manaCost": 7,
+          "type": "Spell",
+          "heroClass": "Neutral",
+          "rarity": "legendary",
+          "price": 5,
+          "playes": 0,
+          "rarityNumber": 0
+        },
+        {
+          "name": "Water Elemental",
+          "manaCost": 5,
+          "type": "Minion",
+          "heroClass": "Neutral",
+          "rarity": "common",
+          "price": 5,
+          "playes": 0,
+          "rarityNumber": 0
+        }
+      ],
+      "manaAverage": 0,
+      "wins": 0,
+      "playes": 0,
+      "rate": 0
+    }
+  ],
+  "currentDeck": {
+    "name": "final",
+    "hero": {
+      "name": "Priest",
+      "HP": 30,
+      "deck": [],
+      "defence": 0
+    },
+    "cardsInDeck": [
+      {
+        "name": "Omega Medic",
+        "manaCost": 3,
+        "type": "Minion",
+        "heroClass": "Neutral",
+        "rarity": "rare",
+        "price": 5,
+        "playes": 0,
+        "rarityNumber": 0
+      },
+      {
+        "name": "Omega Medic",
+        "manaCost": 3,
+        "type": "Minion",
+        "heroClass": "Neutral",
+        "rarity": "rare",
+        "price": 5,
+        "playes": 0,
+        "rarityNumber": 0
+      },
+      {
+        "name": "Spirit of the Bat",
+        "manaCost": 2,
+        "type": "Minion",
+        "heroClass": "Neutral",
+        "rarity": "rare",
+        "price": 5,
+        "playes": 0,
+        "rarityNumber": 0
+      },
+      {
+        "name": "Water Elemental",
+        "manaCost": 5,
+        "type": "Minion",
+        "heroClass": "Neutral",
+        "rarity": "common",
+        "price": 5,
+        "playes": 0,
+        "rarityNumber": 0
+      },
+      {
+        "name": "Squashling",
+        "manaCost": 2,
+        "type": "Minion",
+        "heroClass": "Neutral",
+        "rarity": "common",
+        "price": 5,
+        "playes": 0,
+        "rarityNumber": 0
+      },
+      {
+        "name": "Fan of Knives",
+        "manaCost": 3,
+        "type": "Spell",
+        "heroClass": "Neutral",
+        "rarity": "common",
+        "price": 5,
+        "playes": 0,
+        "rarityNumber": 0
+      },
+      {
+        "name": "Metamorphosis",
+        "manaCost": 7,
+        "type": "Spell",
+        "heroClass": "Neutral",
+        "rarity": "legendary",
+        "price": 5,
+        "playes": 0,
+        "rarityNumber": 0
+      },
+      {
+        "name": "Metamorphosis",
+        "manaCost": 7,
+        "type": "Spell",
+        "heroClass": "Neutral",
+        "rarity": "legendary",
+        "price": 5,
+        "playes": 0,
+        "rarityNumber": 0
+      },
+      {
+        "name": "Water Elemental",
+        "manaCost": 5,
+        "type": "Minion",
+        "heroClass": "Neutral",
+        "rarity": "common",
+        "price": 5,
+        "playes": 0,
+        "rarityNumber": 0
+      }
+    ],
+    "manaAverage": 0,
+    "wins": 0,
+    "playes": 0,
+    "rate": 0
+  }
+}

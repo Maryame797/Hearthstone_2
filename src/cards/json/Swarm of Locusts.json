@@ -1,0 +1,9 @@
+{
+  "name": "Swarm of Locusts",
+  "type": "Spell",
+  "rarity": "rare",
+  "heroClass": "Neutral",
+  "manaCost": 6,
+  "description": "Summon seven 1/1 Locusts with Rush.",
+  "price": 5
+}

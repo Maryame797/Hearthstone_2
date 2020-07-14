@@ -1,0 +1,9 @@
+{
+  "name": "Prophet Velen",
+  "type": "Spell",
+  "rarity": "epic",
+  "heroClass": "Neutral",
+  "manaCost": 5,
+  "description": "Double the damage and HP of your minions and Hero Power.",
+  "price": 5
+}

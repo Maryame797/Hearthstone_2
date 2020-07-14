@@ -1,0 +1,11 @@
+{
+  "name": "Squashling",
+  "type": "Minion",
+  "rarity": "common",
+  "heroClass": "Neutral",
+  "manaCost":2,
+  "description": "Battlecry: Restore 2 Health.",
+  "attack": 2,
+  "HP": 1,
+  "price": 5
+}

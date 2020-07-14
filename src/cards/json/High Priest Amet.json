@@ -1,0 +1,11 @@
+{
+  "name": "High Priest Amet" ,
+  "type": "Minion",
+  "rarity": "legendary",
+  "heroClass": "Priest",
+  "manaCost" :4,
+  "description": "Whenever you summon a minion, set its Health equal to this minion's.",
+  "attack": 2,
+  "HP": 7,
+  "price": 5
+}

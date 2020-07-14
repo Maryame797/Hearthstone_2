@@ -1,0 +1,11 @@
+{
+  "name": "Sandhoof Waterbearer",
+  "type": "Minion",
+  "rarity": "common",
+  "heroClass": "Priest",
+  "manaCost": 5,
+  "description": "At the end of your turn, restore 5 Health to a damaged friendly character.",
+  "attack":5,
+  "HP": 5,
+  "price": 5
+}

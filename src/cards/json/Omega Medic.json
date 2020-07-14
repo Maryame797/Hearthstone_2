@@ -1,0 +1,11 @@
+{
+  "name": "Omega Medic",
+  "type": "Minion",
+  "rarity": "rare",
+  "heroClass": "Neutral",
+  "manaCost":3,
+  "description": "Battlecry: If you have 6 Mana Crystals, restore 6 Health to your hero.",
+  "attack": 3,
+  "HP": 4,
+  "price": 5
+}

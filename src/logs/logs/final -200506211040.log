@@ -1,0 +1,50 @@
+USER: final 
+CREATED_AT: 2020/05/06 21:10:40
+PASSWORD: 356211464
+ 
+go to 2020/05/06 21:10:42 collections
+Click_Button 2020/05/06 21:10:43 Collections_Button
+go to 2020/05/06 21:10:45 shop
+Click_Button 2020/05/06 21:10:45 Shop_Button
+Click_Button 2020/05/06 21:10:47 Sell_Button
+sell 2020/05/06 21:10:48 card: Mortal Coil
+sell 2020/05/06 21:10:52 card: Sprint
+go to 2020/05/06 21:10:57 shop
+Click_Button 2020/05/06 21:10:57 Shop_Button
+Click_Button 2020/05/06 21:10:59 Sell_Button
+Click_Button 2020/05/06 21:11:03 Buy_Button
+Click_Button 2020/05/06 21:11:03 Buy_Button
+go to 2020/05/06 21:11:07 status
+Click_Button 2020/05/06 21:11:07 Status_Button
+go to 2020/05/06 21:11:10 shop
+Click_Button 2020/05/06 21:11:10 Shop_Button
+go to 2020/05/06 21:11:12 collections
+Click_Button 2020/05/06 21:11:12 Collections_Button
+Click_Button 2020/05/06 21:11:13 New Deck_Button
+set null hero 2020/05/06 21:11:18 Priest
+create 2020/05/06 21:11:20 deck: final
+Click_Button 2020/05/06 21:11:23 All Cards_Button
+add to final 2020/05/06 21:11:24 card: Metamorphosis :Warlock
+add to final 2020/05/06 21:11:27 card: Squashling :Warlock
+add to final 2020/05/06 21:11:30 card: Squashling :Warlock
+add to final 2020/05/06 21:11:33 card: Water Elemental :Warlock
+add to final 2020/05/06 21:11:38 card: Fan of Knives :Warlock
+add to final 2020/05/06 21:11:41 card: Fan of Knives :Warlock
+Click_Button 2020/05/06 21:11:45 null_Button
+Click_Button 2020/05/06 21:11:50 Warlock Cards_Button
+Click_Button 2020/05/06 21:11:51 Mage Cards_Button
+Click_Button 2020/05/06 21:11:52 Neutral Cards_Button
+add to final 2020/05/06 21:11:53 card: Metamorphosis :Warlock
+add to final 2020/05/06 21:11:55 card: Metamorphosis :Warlock
+invalid_command 2020/05/06 21:11:58 collections
+add to final 2020/05/06 21:11:59 card: Squashling :Warlock
+invalid_command 2020/05/06 21:12:03 collections
+Click_Button 2020/05/06 21:13:12 null_Button
+edit 2020/05/06 21:13:22 deck: final
+Click_Button 2020/05/06 21:13:25 null_Button
+edit 2020/05/06 21:13:28 deck: final
+Click_Button 2020/05/06 21:13:30 null_Button
+Click_Button 2020/05/06 21:13:32 New Deck_Button
+edit 2020/05/06 21:13:37 deck: final
+Click_Button 2020/05/06 21:13:39 null_Button
+remove from final 2020/05/06 21:13:45 card:Fan of Knives :Warlock

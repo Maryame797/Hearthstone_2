@@ -1,0 +1,9 @@
+{
+  "name": "Vaporize",
+  "type": "Spell",
+  "rarity": "rare",
+  "heroClass": "Mage",
+  "manaCost": 3,
+  "description": "Secret: When a minion attacks your hero, destroy it.",
+  "price": 5
+}

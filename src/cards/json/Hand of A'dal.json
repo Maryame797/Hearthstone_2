@@ -1,0 +1,9 @@
+{
+  "name": "Hand of A'dal",
+  "type": "Spell",
+  "rarity": "common",
+  "heroClass": "Neutral",
+  "manaCost": 2,
+  "description": "Give a minion +2/+2. Draw a card.",
+  "price": 5
+}

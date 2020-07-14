@@ -1,0 +1,9 @@
+{
+  "name": "Polymorph",
+  "type": "Spell",
+  "rarity": "rare",
+  "heroClass": "Mage",
+  "manaCost": 4,
+  "description": " Transform a minion into a 1/1 ship.",
+  "price": 5
+}

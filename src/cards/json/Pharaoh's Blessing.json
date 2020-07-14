@@ -1,0 +1,9 @@
+{
+  "name": "Pharaoh's Blessing",
+  "type": "Spell",
+  "rarity": "rare",
+  "heroClass": "Neutral",
+  "manaCost": 6,
+  "description": " Give a minion +4/+4 Divine Shield, and Taunt.",
+  "price": 5
+}

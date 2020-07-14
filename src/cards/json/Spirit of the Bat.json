@@ -1,0 +1,11 @@
+{
+  "name": "Spirit of the Bat",
+  "type": "Minion",
+  "rarity": "rare",
+  "heroClass": "Neutral",
+  "manaCost": 2,
+  "attack": 0,
+  "HP": 3,
+  "description": "After a friendly minion dies, give a minion in your hand +1/+1.",
+  "price": 5
+}

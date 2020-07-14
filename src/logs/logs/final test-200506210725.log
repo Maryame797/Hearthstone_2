@@ -1,0 +1,141 @@
+USER: final test
+CREATED_AT: 2020/05/06 21:07:25
+PASSWORD: -1919488772
+ 
+go to 2020/05/06 21:07:36 status
+Click_Button 2020/05/06 21:07:36 Status_Button
+Click_Button 2020/05/06 21:07:43 Play_Button
+go to 2020/05/06 21:07:55 collections
+Click_Button 2020/05/06 21:07:55 Collections_Button
+Click_Button 2020/05/06 21:07:59 All Cards_Button
+Click_Button 2020/05/06 21:08:00 Warlock Cards_Button
+Click_Button 2020/05/06 21:08:01 Mage Cards_Button
+Click_Button 2020/05/06 21:08:02 Rogue Cards_Button
+Click_Button 2020/05/06 21:08:03 Hunter Cards_Button
+Click_Button 2020/05/06 21:08:04 Priest Cards_Button
+Click_Button 2020/05/06 21:08:04 Neutral Cards_Button
+Click_Button 2020/05/06 21:08:06 All Cards_Button
+Click_Button 2020/05/06 21:08:07 New Deck_Button
+set null hero 2020/05/06 21:08:11 Mage
+create 2020/05/06 21:08:13 deck: final
+Click_Button 2020/05/06 21:08:16 All Cards_Button
+invalid_command 2020/05/06 21:08:21 collections
+add to final 2020/05/06 21:08:23 card: Omega Medic :Warlock
+Click_Button 2020/05/06 21:08:25 Mage Cards_Button
+add to final 2020/05/06 21:08:26 card: Mortal Coil :Warlock
+Click_Button 2020/05/06 21:08:29 Warlock Cards_Button
+Click_Button 2020/05/06 21:08:30 All Cards_Button
+add to final 2020/05/06 21:08:31 card: Omega Medic :Warlock
+add to final 2020/05/06 21:08:35 card: Squashling :Warlock
+add to final 2020/05/06 21:08:38 card: Squashling :Warlock
+go to 2020/05/06 21:08:42 shop
+Click_Button 2020/05/06 21:08:42 Shop_Button
+Click_Button 2020/05/06 21:08:44 Buy_Button
+Click_Button 2020/05/06 21:08:45 Sell_Button
+Click_Button 2020/05/06 21:16:07 Sell_Button
+Click_Button 2020/05/06 21:16:09 Sell_Button
+Click_Button 2020/05/06 21:16:09 Sell_Button
+Click_Button 2020/05/06 21:16:11 Buy_Button
+buy 2020/05/06 21:16:12 card: Friendly Smith
+buy 2020/05/06 21:16:14 card: Friendly Smith
+buy 2020/05/06 21:16:14 card: Rolling Fireball
+buy 2020/05/06 21:16:15 card: Sprint
+go to 2020/05/06 21:16:20 status
+Click_Button 2020/05/06 21:16:20 Status_Button
+go to 2020/05/06 21:16:31 collections
+Click_Button 2020/05/06 21:16:31 Collections_Button
+Click_Button 2020/05/06 21:16:33 Priest Cards_Button
+Click_Button 2020/05/06 21:16:33 Card_Button
+go to 2020/05/06 21:16:33 shop
+buy 2020/05/06 21:16:38 card: Swamp King Dred
+buy 2020/05/06 21:16:39 card: Rolling Fireball
+buy 2020/05/06 21:16:41 card: High Priest Amet
+go to 2020/05/06 21:16:45 shop
+Click_Button 2020/05/06 21:16:45 Shop_Button
+go to 2020/05/06 21:16:50 collections
+Click_Button 2020/05/06 21:16:50 Collections_Button
+Click_Button 2020/05/06 21:16:52 null_Button
+Click_Button 2020/05/06 21:16:53 Priest Cards_Button
+Click_Button 2020/05/06 21:16:54 Hunter Cards_Button
+edit 2020/05/06 21:16:58 deck: final
+Click_Button 2020/05/06 21:17:01 null_Button
+Click_Button 2020/05/06 21:17:03 Rogue Cards_Button
+invalid_command 2020/05/06 21:17:07 collections
+Click_Button 2020/05/06 21:17:09 Warlock Cards_Button
+Click_Button 2020/05/06 21:17:10 All Cards_Button
+add to final 2020/05/06 21:17:11 card: Metamorphosis :Warlock
+add to final 2020/05/06 21:17:13 card: Omega Medic :Warlock
+Click_Button 2020/05/06 21:17:16 Change Hero_Button
+change final name 2020/05/06 21:17:25 
+Click_Button 2020/05/06 21:17:26 null_Button
+Click_Button 2020/05/06 21:17:26 null_Button
+Click_Button 2020/05/06 21:17:28 Change Hero_Button
+change  hero 2020/05/06 21:17:36 Mage
+change  name 2020/05/06 21:17:36 finaaal
+remove from finaaal 2020/05/06 21:17:42 card:Vaporize :Warlock
+Click_Button 2020/05/06 21:17:45 Hunter Cards_Button
+Click_Button 2020/05/06 21:17:46 null_Button
+Click_Button 2020/05/06 21:17:55 Change Hero_Button
+change finaaal hero 2020/05/06 21:17:58 Hunter
+change finaaal hero 2020/05/06 21:18:00 Priest
+change finaaal name 2020/05/06 21:18:01 final
+Click_Button 2020/05/06 21:18:04 Change Hero_Button
+change final hero 2020/05/06 21:18:07 Warlock
+change final name 2020/05/06 21:18:08 final
+Click_Button 2020/05/06 21:18:12 Change Hero_Button
+change final hero 2020/05/06 21:18:14 Rogue
+change final name 2020/05/06 21:18:19 final
+Click_Button 2020/05/06 21:18:22 Rogue Cards_Button
+add to final 2020/05/06 21:18:23 card: Omega Medic :Warlock
+Click_Button 2020/05/06 21:18:28 Serach_Button
+invalid_command 2020/05/06 21:18:32 collections
+Click_Button 2020/05/06 21:18:32 Card_Button
+go to 2020/05/06 21:18:32 shop
+buy 2020/05/06 21:18:36 card: Sandhoof Waterbearer
+Click_Button 2020/05/06 21:18:37 Sell_Button
+sell 2020/05/06 21:18:38 card: Spirit of the Bat
+sell 2020/05/06 21:18:39 card: Prophet Velen
+sell 2020/05/06 21:18:40 card: Polymorph
+Click_Button 2020/05/06 21:18:43 Play_Button
+go to 2020/05/06 21:18:47 collections
+Click_Button 2020/05/06 21:18:47 Collections_Button
+Click_Button 2020/05/06 21:18:49 null_Button
+edit 2020/05/06 21:18:51 deck: final
+Click_Button 2020/05/06 21:18:54 null_Button
+Click_Button 2020/05/06 21:19:03 All Cards_Button
+invalid_command 2020/05/06 21:19:06 collections
+invalid_command 2020/05/06 21:19:07 collections
+add to final 2020/05/06 21:19:09 card: Omega Medic :Warlock
+add to final 2020/05/06 21:19:11 card: Mortal Coil :Warlock
+invalid_command 2020/05/06 21:19:15 collections
+Click_Button 2020/05/06 21:19:16 Card_Button
+go to 2020/05/06 21:19:16 shop
+go to 2020/05/06 21:19:19 collections
+Click_Button 2020/05/06 21:19:19 Collections_Button
+Click_Button 2020/05/06 21:19:20 null_Button
+edit 2020/05/06 21:19:25 deck: final
+Click_Button 2020/05/06 21:19:27 null_Button
+Click_Button 2020/05/06 21:19:29 Warlock Cards_Button
+Click_Button 2020/05/06 21:19:30 Rogue Cards_Button
+Click_Button 2020/05/06 21:19:31 Rogue Cards_Button
+invalid_command 2020/05/06 21:19:37 collections
+Click_Button 2020/05/06 21:19:38 null_Button
+Click_Button 2020/05/06 21:19:43 All Cards_Button
+Click_Button 2020/05/06 21:19:45 cards you have_Button
+invalid_command 2020/05/06 21:19:47 collections
+add to final 2020/05/06 21:19:50 card: Water Elemental :Warlock
+add to final 2020/05/06 21:19:53 card: Mortal Coil :Warlock
+add to final 2020/05/06 21:19:55 card: Prophet Velen :Warlock
+add to final 2020/05/06 21:19:57 card: Prophet Velen :Warlock
+add to final 2020/05/06 21:20:01 card: Prophet Velen :Warlock
+Click_Button 2020/05/06 21:20:09 null_Button
+Click_Button 2020/05/06 21:20:18 Priest Cards_Button
+Click_Button 2020/05/06 21:20:18 Priest Cards_Button
+Click_Button 2020/05/06 21:20:18 Neutral Cards_Button
+Click_Button 2020/05/06 21:20:24 Play_Button
+info_passive 2020/05/06 21:20:27 Off cards
+info_passive 2020/05/06 21:20:29 Off cards
+choose game deck: 2020/05/06 21:20:30 null
+start 2020/05/06 21:20:30 game
+end 2020/05/06 21:20:57 game
+exit 2020/05/06 21:21:02 

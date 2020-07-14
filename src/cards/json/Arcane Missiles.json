@@ -1,0 +1,9 @@
+{
+  "name": "Arcane Missiles",
+  "type": "Spell",
+  "rarity": "common",
+  "heroClass": "Neutral",
+  "manaCost":1,
+  "description": "Deal 3 damage randomly split among all enemies.",
+  "price": 5
+}

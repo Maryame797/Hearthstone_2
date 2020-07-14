@@ -1,0 +1,10 @@
+{
+  "name": "Battle Axe",
+  "type": "Weapon",
+  "rarity": "common",
+  "heroClass": "Neutral",
+  "manaCost": 1,
+  "attack":2,
+  "HP": 2,
+  "price": 5
+}

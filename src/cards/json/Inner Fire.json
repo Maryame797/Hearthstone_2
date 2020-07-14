@@ -1,0 +1,11 @@
+{
+  "name": "Inner Fire",
+  "type": "Minion",
+  "rarity": "rare",
+  "heroClass": "Neutral",
+  "manaCost": 3,
+  "description": "Restore 3 Health to your hero and your hero will be protected until this minion is in your hand ",
+  "attack":2,
+  "HP": 4,
+  "price": 5
+}

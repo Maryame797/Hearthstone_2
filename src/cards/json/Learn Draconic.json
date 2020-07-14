@@ -1,0 +1,9 @@
+{
+  "name": "Learn Draconic",
+  "type": "Spell",
+  "rarity": "common",
+  "heroClass": "Neutral",
+  "manaCost": 1,
+  "description": "Sidequest: Spend 8 Mana on spells. Reward: Summon a 6/6 Dragon.",
+  "price": 5
+}

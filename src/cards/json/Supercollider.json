@@ -1,0 +1,11 @@
+{
+  "name": "Supercollider",
+  "type": "Weapon",
+  "rarity": "epic",
+  "heroClass": "Rogue",
+  "manaCost":5,
+  "attack": 1,
+  "durability": 3,
+  "description": "After you attack a minion, force it to attack one of its neighbors.",
+  "price": 5
+}

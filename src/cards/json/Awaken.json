@@ -1,0 +1,11 @@
+{
+  "name": "Awaken",
+  "type": "Weapon",
+  "rarity": "common",
+  "heroClass": "Warlock",
+  "manaCost": 4,
+  "description": "Whenever your hero would take damage, this loses 1 Durability instead. ",
+  "attack":2,
+  "HP": 4,
+  "price": 5
+}

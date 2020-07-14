@@ -1,0 +1,9 @@
+{
+  "name":"Mortal Coil",
+  "type": "Spell",
+  "rarity": "common",
+  "heroClass": "Neutral",
+  "manaCost":2,
+  "description": "You can use your HeroPower 2 time in your turn. ",
+  "price": 5
+}

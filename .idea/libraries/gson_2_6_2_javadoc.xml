@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="gson-2.6.2-javadoc">
+    <CLASSES />
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/libs/gson-2.6.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+    <excluded>
+      <root url="jar://$PROJECT_DIR$/libs/gson-2.6.2-javadoc.jar!/" />
+    </excluded>
+  </library>
+</component>

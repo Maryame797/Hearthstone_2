@@ -1,0 +1,9 @@
+{
+  "name": "Deadly Shot",
+  "type": "Spell",
+  "rarity": "common",
+  "heroClass": "Hunter",
+  "manaCost": 3,
+  "description": "Destroy a random enemy minion.",
+  "price": 5
+}

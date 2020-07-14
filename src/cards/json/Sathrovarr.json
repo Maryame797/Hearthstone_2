@@ -1,0 +1,11 @@
+{
+  "name": "Sathrovarr",
+  "type": "Minion",
+  "rarity": "legendary",
+  "heroClass": "Neutral",
+  "manaCost": 9,
+  "attack": 5,
+  "HP": 5,
+  "description": "Battlecry: Choose a friendly minion. Add a copy of it to your hand, deck, and battlefield.",
+  "price": 5
+}

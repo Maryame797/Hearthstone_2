@@ -1,0 +1,11 @@
+{
+  "name": "Tomb Warden",
+  "type": "Minion",
+  "rarity": "rare",
+  "heroClass": "Neutral",
+  "manaCost": 8,
+  "attack": 3,
+  "HP": 6,
+  "description": "Taunt, Battlecry: Summon a copy of this minion.",
+  "price": 5
+}
