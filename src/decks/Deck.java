@@ -51,7 +51,7 @@ public class Deck implements Comparable<Deck>{
         return manaAverage;
     }
 
-    public void seManaAverage(){
+    public void setManaAverage(){
        int average = 0;
        for (int i = 0 ; i < cardsInDeck.size() ; i++)
            average+=cardsInDeck.get(i).getManaCost();

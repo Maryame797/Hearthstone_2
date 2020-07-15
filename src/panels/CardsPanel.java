@@ -1,6 +1,8 @@
 package panels;
 
 import cards.Card;
+import graphicutill.CardView;
+import graphicutill.ClickListener;
 
 import javax.swing.*;
 import javax.swing.border.LineBorder;
@@ -12,29 +14,27 @@ import java.util.ArrayList;
 import static administer.Administer.*;
 import static administer.Constants.NORMAL_CARD_HEIGHT;
 import static administer.Constants.NORMAL_CARD_WIDTH;
-import static cards.Card.getAllCards;
-import static panels.Collections.cardPath;
 import static panels.Collections.goToShop;
-import static panels.DecksPanel.isCreateDeck;
-import static panels.DecksPanel.isEditDeck;
 import static panels.ShopPanel.*;
 import static shop.shop.buyCard;
 import static shop.shop.sellCard;
 
 public class CardsPanel extends JPanel {
-    private JPanel panel;
+    private static JPanel panel;
     private JScrollPane scrollPane;
     private static JButton [] cardButton;
     private static JLabel[] cardPrice;
     private static JButton[] addCard;
     private static JButton[] removeCard;
     private static String[] cardName;
+    private static int[] x = new int[37];
+    private static int[] y = new int[37];
 
     public CardsPanel(){
         panel = new JPanel();
         panel.setLayout(null);
         panel.setPreferredSize(new Dimension(820,2935));
-        setCardButton();
+        setLocation();
         setCardPrice();
         setAddCard();
         setRemoveCard();
@@ -54,7 +54,7 @@ public class CardsPanel extends JPanel {
         return cardButton;
     }
 
-    public void buy(int i){
+    public static void buy(int i){
         if (isBuy()) {
             buyCard(getUser(), i);
             cardButton[i].setIcon(null);
@@ -62,7 +62,7 @@ public class CardsPanel extends JPanel {
         }
     }
 
-    public void sell (int i ){
+    public static void sell(int i){
         if (isSell()){
             sellCard(getUser(),i);
             cardButton[i].setIcon(null);
@@ -70,45 +70,49 @@ public class CardsPanel extends JPanel {
         }
     }
 
-    private void setCardButton(){
+    private void setLocation(){
         cardButton = new JButton[37];
         cardName = new String[37];
-        int i = 0; int t =0;
+        int i; int t =0;
         for (int z =0 ; z < 4 ; z ++) {
             i = t;
             for (int j = 0; j < 9; j++) {
-                cardButton[i] = new JButton();
-                cardButton[i].setBounds(6 + (204 * z), 6 + (292 * j), NORMAL_CARD_WIDTH, NORMAL_CARD_HEIGHT);
-                int finalI = i;
-                cardButton[i].addActionListener(new ActionListener() {
-                    public void actionPerformed(ActionEvent e) throws IndexOutOfBoundsException {
-                        buy(finalI);
-                        sell(finalI);
-                        goToShop(cardName[finalI]);
-
-                    }
-                });
-                panel.add(cardButton[i]);
-                cardButton[i].setContentAreaFilled(false);
-                cardButton[i].setFocusPainted(false);
-                cardButton[i].setBorderPainted(false);
+                x[i] = 6 + (204 * z);
+                y[i] = 6 + (292 * j);
+//                cardButton[i] = new JButton();
+//                cardButton[i].setBounds(6 + (204 * z), 6 + (292 * j), NORMAL_CARD_WIDTH, NORMAL_CARD_HEIGHT);
+//                int finalI = i;
+//                cardButton[i].addActionListener(new ActionListener() {
+//                    public void actionPerformed(ActionEvent e) throws IndexOutOfBoundsException {
+//                        buy(finalI);
+//                        sell(finalI);
+//                        goToShop(cardName[finalI]);
+//
+//                    }
+//                });
+//                panel.add(cardButton[i]);
+//                cardButton[i].setContentAreaFilled(false);
+//                cardButton[i].setFocusPainted(false);
+//                cardButton[i].setBorderPainted(false);
                 i += 4;
             }
             t++;
         }
-        cardButton[36] = new JButton();
-        cardButton[36].setBounds(6,2634,NORMAL_CARD_WIDTH,NORMAL_CARD_HEIGHT);
-        panel.add(cardButton[36]);
-        cardButton[36].setContentAreaFilled(false);
-        cardButton[36].setFocusPainted(false);
-        cardButton[36].setBorderPainted(false);
-        cardButton[36].addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) throws IndexOutOfBoundsException {
-                buy(36);
-                sell(36);
-                goToShop(cardName[36]);
-            }
-        });
+        x[36] = 6;
+        y[36] = 2634;
+//        cardButton[36] = new JButton();
+//        cardButton[36].setBounds(6,2634,NORMAL_CARD_WIDTH,NORMAL_CARD_HEIGHT);
+//        panel.add(cardButton[36]);
+//        cardButton[36].setContentAreaFilled(false);
+//        cardButton[36].setFocusPainted(false);
+//        cardButton[36].setBorderPainted(false);
+//        cardButton[36].addActionListener(new ActionListener() {
+//            public void actionPerformed(ActionEvent e) throws IndexOutOfBoundsException {
+//                buy(36);
+//                sell(36);
+//                goToShop(cardName[36]);
+//            }
+//        });
     }
 
     private void setCardPrice(){
@@ -241,21 +245,33 @@ public class CardsPanel extends JPanel {
     }
 
     public static void setButtonIcon(ArrayList<Card> cards){
-        for (int i = 0 ; i < getAllCards().size(); i++) {
-            cardButton[i].setIcon(null);
-            cardName[i]=null;
-            addCard[i].setVisible(false);
-            removeCard[i].setVisible(false);
+        for (int i =0 ; i < cards.size() ; i++){
+            int finalI = i;
+            panel.add(new CardView(cards.get(i), x[i], y[i], NORMAL_CARD_WIDTH, NORMAL_CARD_HEIGHT, new ClickListener() {
+                @Override
+                public void onClick() {
+                    buy(finalI);
+                    sell(finalI);
+                    goToShop(cards.get(finalI).getName());
+                }
+            }));
         }
-        for (int i = 0 ; i < cards.size() ; i++) {
-            cardButton[i].setIcon(new ImageIcon(cardPath(cards.get(i))));
-            cardName[i] = cards.get(i).getName();
-            if (isCreateDeck() || isEditDeck()){
-                addCard[i].setVisible(true);
-                removeCard[i].setVisible(true);
-            }
 
-        }
+//        for (int i = 0 ; i < getAllCards().size(); i++) {
+//            cardButton[i].setIcon(null);
+//            cardName[i]=null;
+//            addCard[i].setVisible(false);
+//            removeCard[i].setVisible(false);
+//        }
+//        for (int i = 0 ; i < cards.size() ; i++) {
+//            cardButton[i].setIcon(new ImageIcon(cardPath(cards.get(i))));
+//            cardName[i] = cards.get(i).getName();
+//            if (isCreateDeck() || isEditDeck()){
+//                addCard[i].setVisible(true);
+//                removeCard[i].setVisible(true);
+//            }
+
+//        }
     }
 
     public static JLabel[] getCardPrice() {

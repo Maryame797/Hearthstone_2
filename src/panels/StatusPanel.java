@@ -64,6 +64,7 @@ public class StatusPanel extends JPanel {
                     lblNewLabel_9.setText(String.valueOf(getUser().getTopDecks().get(finalI).getRate()*100));
                     lblNewLabel_10.setText(String.valueOf(getUser().getTopDecks().get(finalI).getWins()));
                     lblNewLabel_11.setText(String.valueOf(getUser().getTopDecks().get(finalI).getPlayes()));
+                    getUser().getTopDecks().get(finalI).setManaAverage();
                     lblNewLabel_12.setText(String.valueOf(getUser().getTopDecks().get(finalI).getManaAverage()));
                     lblNewLabel_13.setText(getUser().getTopDecks().get(finalI).getHero().getName());
                     lblNewLabel_14.setIcon(getUser().getTopDecks().get(finalI).getTopCard());
