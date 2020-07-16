@@ -16,9 +16,6 @@ public class CardView extends JPanel {
     private int y;
     private int width;
     private int height;
-    private JLabel hp;
-    private JLabel attack;
-    private JLabel mana;
 
     public CardView(Card card, int x, int y, int width, int height, ClickListener clickListener) {
         this.clickListener = clickListener;
@@ -28,24 +25,26 @@ public class CardView extends JPanel {
         this.width = width;
         this.height = height;
         setBounds(x,y,width,height);
-        setVisible(true);
-        mana = new JLabel(String.valueOf(card.getManaCost()));
+        setOpaque(false);
+        setBorder(BorderFactory.createEmptyBorder());
+        setLayout(null);
+        JLabel mana = new JLabel(String.valueOf(card.getManaCost()));
         mana.setForeground(Color.WHITE);
         mana.setFont(new Font("American Typewriter", Font.PLAIN, 25));
-        mana.setBounds(25, 25, 28, 30);
+        mana.setBounds(25, 20, 28, 30);
         add(mana);
-        if (!card.getType().equals("spell")){
-            hp = new JLabel(String.valueOf(card.getHP()));
+        if (!card.getType().equals("Spell")){
+            JLabel hp = new JLabel(String.valueOf(card.getHP()));
+            hp.setForeground(Color.WHITE);
             hp.setFont(new Font("American Typewriter", Font.PLAIN, 25));
             hp.setBounds(166, 233, 28, 30);
             add(hp);
-            attack = new JLabel(String.valueOf(card.getAttack()));
+            JLabel attack = new JLabel(String.valueOf(card.getAttack()));
+            attack.setForeground(Color.WHITE);
             attack.setFont(new Font("American Typewriter", Font.PLAIN, 25));
             attack.setBounds(25, 236, 22, 30);
             add(attack);
         }
-        mana.setBounds(50, 50 , 10, 10);
-        add(mana);
 
 //        this.addMouseListener(new MouseAdapter() {
 //            @Override

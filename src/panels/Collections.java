@@ -85,10 +85,12 @@ public class Collections extends JPanel{
     }
 
     public static String cardPath(Card card){
-        if (getUser().getCurrentCards().contains(card))
-            return "src"+File.separator+"panels"+File.separator+"cardimages"+File.separator+card.getName()+".png";
-        else
-            return "src"+File.separator+"panels"+File.separator+"cardimages"+File.separator+card.getName()+"2.png";
+        if (isCollections()) {
+            if (getUser().getCurrentCards().contains(card))
+                return "src" + File.separator + "panels" + File.separator + "cardimages" + File.separator + card.getName() + ".png";
+            else
+                return "src" + File.separator + "panels" + File.separator + "cardimages" + File.separator + card.getName() + "2.png";
+        }else return "src" + File.separator + "panels" + File.separator + "cardimages" + File.separator + card.getName() + ".png";
     }
 
     private void setWarlockButton(){
@@ -227,7 +229,7 @@ public class Collections extends JPanel{
         JButton btnNewButton_6 = new JButton("");
         btnNewButton_6.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-               setButtonIcon(getNeutralCards());
+               setButtonIcon(getAllCards());
                 addToBody("Click_Button","All Cards_Button",getUser());
             }
         });

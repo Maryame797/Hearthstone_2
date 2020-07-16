@@ -11,9 +11,7 @@ import java.io.File;
 import java.util.ArrayList;
 
 import static administer.Administer.*;
-import static panels.CardsPanel.getCardButton;
-import static panels.CardsPanel.getCardPrice;
-import static panels.Collections.setCollections;
+import static panels.CardsPanel.*;
 import static panels.Collections.setExitButton;
 import static shop.shop.canBuy;
 import static shop.shop.canSell;
@@ -71,18 +69,13 @@ public class ShopPanel extends JPanel{
     }
 
     public static void cardsToBuy(){
-        for (int i = 0 ; i < canBuy(getUser()).size() ; i++){
-            getCardButton()[i].setIcon(new ImageIcon("src"+File.separator+"panels"+File.separator+"cardimages"+File.separator+canBuy(getUser()).get(i).getName()+".png"));
-        }
-        for(int i = canBuy(getUser()).size() ; i < getCardButton().length ; i++){
-            getCardButton()[i].setIcon(null);
-        }
+        setButtonIcon(canBuy(getUser()));
         for (int i = 0 ; i < canBuy(getUser()).size();i++){
             getCardPrice()[i].setText("Price: " + canBuy(getUser()).get(i).getPrice());
             getCardPrice()[i].setVisible(true);
         }
         setPriceLabel(canBuy(getUser()));
-        buy = true; sell = false; setCollections(false);
+        buy = true; sell = false;
         lblNewLabel_2_1.setVisible(false);
         lblNewLabel_2.setVisible(true);
 
@@ -151,14 +144,9 @@ public class ShopPanel extends JPanel{
         btnNewButton_1.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 Log.addToBody("Click_Button","Sell_Button",getUser());
-                for (int i = 0 ; i < canSell(getUser()).size() ; i++){
-                    getCardButton()[i].setIcon(new ImageIcon("src"+File.separator+"panels"+File.separator+"cardimages"+File.separator+""+canSell(getUser()).get(i).getName()+".png"));
-                }
-                for(int i = canSell(getUser()).size() ; i < getCardButton().length ; i++){
-                    getCardButton()[i].setIcon(null);
-                }
+               setButtonIcon(canSell(getUser()));
                 setPriceLabel(canSell(getUser()));
-                sell= true; buy = false; setCollections(false);
+                sell= true; buy = false;
                 lblNewLabel_2_1.setVisible(true);
                 lblNewLabel_2.setVisible(false);
 

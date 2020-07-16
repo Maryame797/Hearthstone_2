@@ -8,6 +8,7 @@ import java.io.File;
 
 import static administer.Administer.*;
 import static logs.Log.addToBody;
+import static panels.Collections.setCollections;
 
 public class MainMenu  extends JPanel{
     public MainMenu(){
@@ -73,6 +74,7 @@ public class MainMenu  extends JPanel{
         add(btnNewButton_2);
         btnNewButton_2.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
+                setCollections(false);
                 setPanelOnFrame(new ShopPanel(),getFrame());
                 addToBody("Click_Button","Shop_Button",getUser());
 

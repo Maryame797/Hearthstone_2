@@ -15,6 +15,8 @@ import static administer.Administer.*;
 import static administer.Constants.NORMAL_CARD_HEIGHT;
 import static administer.Constants.NORMAL_CARD_WIDTH;
 import static panels.Collections.goToShop;
+import static panels.DecksPanel.isCreateDeck;
+import static panels.DecksPanel.isEditDeck;
 import static panels.ShopPanel.*;
 import static shop.shop.buyCard;
 import static shop.shop.sellCard;
@@ -57,7 +59,7 @@ public class CardsPanel extends JPanel {
     public static void buy(int i){
         if (isBuy()) {
             buyCard(getUser(), i);
-            cardButton[i].setIcon(null);
+//            cardButton[i].setIcon(null);
             getGemsLabel().setText("Your gems: "+ getUser().getGems());
         }
     }
@@ -65,13 +67,13 @@ public class CardsPanel extends JPanel {
     public static void sell(int i){
         if (isSell()){
             sellCard(getUser(),i);
-            cardButton[i].setIcon(null);
+//            cardButton[i].setIcon(null);
             getGemsLabel().setText("Your gems: "+ getUser().getGems());
         }
     }
 
     private void setLocation(){
-        cardButton = new JButton[37];
+        //cardButton = new JButton[37];
         cardName = new String[37];
         int i; int t =0;
         for (int z =0 ; z < 4 ; z ++) {
@@ -142,23 +144,24 @@ public class CardsPanel extends JPanel {
 
     }
 
-    private void setAddCard(){
+    private void setAddCard() {
         addCard = new JButton[37];
-        int i = 0; int t = 0;
-        for (int z =0 ; z < 4 ; z ++) {
+        int i = 0;
+        int t = 0;
+        for (int z = 0; z < 4; z++) {
             i = t;
             for (int j = 0; j < 9; j++) {
                 addCard[i] = new JButton("Add");
-                addCard[i].setBounds(8 + (204 * z), 280 + (292 * j), 103, 29);
+                addCard[i].setBounds(8 + (204 * z), 285 + (292 * j), 103, 29);
                 addCard[i].setFont(new Font("American Typewriter", Font.BOLD, 15));
                 addCard[i].setForeground(new Color(135, 206, 250));
                 int finalI = i;
                 addCard[i].addActionListener(new ActionListener() {
                     public void actionPerformed(ActionEvent e) {
-                        if (getUser().getCurrentDeck().getCardsInDeck().size()>15)
-                            JOptionPane.showMessageDialog(null,"Your deck is full!");
+                        if (getUser().getCurrentDeck().getCardsInDeck().size() > 15)
+                            JOptionPane.showMessageDialog(null, "Your deck is full!");
                         else
-                        addInDeck(getUser(),cardName[finalI]);
+                            addInDeck(getUser(), cardName[finalI]);
                     }
                 });
                 panel.add(addCard[i]);
@@ -172,12 +175,12 @@ public class CardsPanel extends JPanel {
             t++;
         }
         addCard[36] = new JButton("Add");
-        addCard[36].setBounds(8,2914,103,29);
+        addCard[36].setBounds(8, 2914, 103, 29);
         addCard[36].setFont(new Font("American Typewriter", Font.BOLD, 15));
         addCard[36].setForeground(new Color(135, 206, 250));
         addCard[36].addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                addInDeck(getUser(),cardName[36]);
+                addInDeck(getUser(), cardName[36]);
             }
         });
         addCard[36].setContentAreaFilled(false);
@@ -245,9 +248,11 @@ public class CardsPanel extends JPanel {
     }
 
     public static void setButtonIcon(ArrayList<Card> cards){
+        panel.removeAll();
+        panel.updateUI();
         for (int i =0 ; i < cards.size() ; i++){
             int finalI = i;
-            panel.add(new CardView(cards.get(i), x[i], y[i], NORMAL_CARD_WIDTH, NORMAL_CARD_HEIGHT, new ClickListener() {
+            panel.add(new CardView(cards.get(i), x[i], y[i],NORMAL_CARD_WIDTH, NORMAL_CARD_HEIGHT, new ClickListener() {
                 @Override
                 public void onClick() {
                     buy(finalI);
@@ -256,22 +261,20 @@ public class CardsPanel extends JPanel {
                 }
             }));
         }
-
 //        for (int i = 0 ; i < getAllCards().size(); i++) {
-//            cardButton[i].setIcon(null);
 //            cardName[i]=null;
 //            addCard[i].setVisible(false);
 //            removeCard[i].setVisible(false);
 //        }
-//        for (int i = 0 ; i < cards.size() ; i++) {
-//            cardButton[i].setIcon(new ImageIcon(cardPath(cards.get(i))));
-//            cardName[i] = cards.get(i).getName();
-//            if (isCreateDeck() || isEditDeck()){
-//                addCard[i].setVisible(true);
-//                removeCard[i].setVisible(true);
-//            }
+        for (int i = 0 ; i < cards.size() ; i++) {
+            cardName[i] = cards.get(i).getName();
+            if (isCreateDeck() || isEditDeck()){
+                panel.add(addCard[i]);
+                panel.add(removeCard[i]);
+            }
 
-//        }
+        }
+        panel.revalidate();
     }
 
     public static JLabel[] getCardPrice() {

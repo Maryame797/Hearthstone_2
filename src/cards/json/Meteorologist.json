@@ -5,7 +5,7 @@
   "heroClass": "Neutral",
   "manaCost": 6,
   "attack":4,
-  "durability": 4,
+  "HP": 4,
   "description": "You may attack again!",
   "price": 5
 }

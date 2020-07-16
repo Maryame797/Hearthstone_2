@@ -158,8 +158,8 @@ public class DecksPanel extends JPanel {
                 } else {
                     JOptionPane.showMessageDialog(null,"Choose the deck you want to edit!");
                     btnEditDeck.setText("Finish");
-                    for (int i = 0 ; i < getCardButton().length; i++)
-                        getCardButton()[i].setIcon(null);
+//                    for (int i = 0 ; i < getCardButton().length; i++)
+                    //    getCardButton()[i].setIcon(null);
                     editDeck = true;
                     btnEditHero.setVisible(true);
                     btnDelete.setVisible(true);
