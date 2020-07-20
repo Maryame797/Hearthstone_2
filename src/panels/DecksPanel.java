@@ -148,18 +148,17 @@ public class DecksPanel extends JPanel {
         btnEditDeck.setFont(new Font("American Typewriter", Font.PLAIN, 16));
         btnEditDeck.setForeground(new Color(0, 0, 139));
         btnEditDeck.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
+            public void actionPerformed(ActionEvent e){
                 addToBody("edit","deck: "+getUser().getCurrentDeck().getName(),getUser());
                 if (btnEditDeck.getText().equals("Finish")) {
                     editDeck = false;
                     btnEditDeck.setText("Edit deck");
+                    setButtonIcon(getUser().getCurrentDeck().getCardsInDeck());
                     btnEditHero.setVisible(false);
                      btnDelete.setVisible(false);
                 } else {
                     JOptionPane.showMessageDialog(null,"Choose the deck you want to edit!");
                     btnEditDeck.setText("Finish");
-//                    for (int i = 0 ; i < getCardButton().length; i++)
-                    //    getCardButton()[i].setIcon(null);
                     editDeck = true;
                     btnEditHero.setVisible(true);
                     btnDelete.setVisible(true);

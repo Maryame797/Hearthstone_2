@@ -1,6 +1,5 @@
 package panels;
 
-import cards.Card;
 import logs.Log;
 
 import javax.swing.*;
@@ -8,11 +7,10 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
-import java.util.ArrayList;
 
 import static administer.Administer.*;
-import static panels.CardsPanel.*;
-import static panels.Collections.setExitButton;
+import static panels.CardsPanel.setButtonIcon;
+import static panels.Collections.*;
 import static shop.shop.canBuy;
 import static shop.shop.canSell;
 
@@ -58,29 +56,6 @@ public class ShopPanel extends JPanel{
         return gems;
     }
 
-    private static void setPriceLabel(ArrayList<Card> cards){
-        for (int i = 0 ; i < getCardButton().length ; i++){
-            getCardPrice()[i].setVisible(false);
-        }
-        for (int i = 0 ; i < cards.size() ; i++){
-            getCardPrice()[i].setText("Price: " + cards.get(i).getPrice());
-            getCardPrice()[i].setVisible(true);
-        }
-    }
-
-    public static void cardsToBuy(){
-        setButtonIcon(canBuy(getUser()));
-        for (int i = 0 ; i < canBuy(getUser()).size();i++){
-            getCardPrice()[i].setText("Price: " + canBuy(getUser()).get(i).getPrice());
-            getCardPrice()[i].setVisible(true);
-        }
-        setPriceLabel(canBuy(getUser()));
-        buy = true; sell = false;
-        lblNewLabel_2_1.setVisible(false);
-        lblNewLabel_2.setVisible(true);
-
-    }
-
     private void setLabels(){
         JLabel lblNewLabel = new JLabel("shop");
         lblNewLabel.setForeground(new Color(135, 206, 250));
@@ -111,6 +86,12 @@ public class ShopPanel extends JPanel{
 
 
     }
+    public static void cardsToBuy(){
+        buy = true; sell = false; setCollections(false);
+        lblNewLabel_2_1.setVisible(false);
+        lblNewLabel_2.setVisible(true);
+        setButtonIcon(canBuy(getUser()));
+    }
 
     private void setBuyButton(){
 
@@ -125,8 +106,8 @@ public class ShopPanel extends JPanel{
         btnNewButton.setBorderPainted(false);
         btnNewButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                cardsToBuy();
                 Log.addToBody("Click_Button","Buy_Button",getUser());
+                cardsToBuy();
             }
         });
     }
@@ -144,11 +125,10 @@ public class ShopPanel extends JPanel{
         btnNewButton_1.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 Log.addToBody("Click_Button","Sell_Button",getUser());
-               setButtonIcon(canSell(getUser()));
-                setPriceLabel(canSell(getUser()));
                 sell= true; buy = false;
                 lblNewLabel_2_1.setVisible(true);
                 lblNewLabel_2.setVisible(false);
+                setButtonIcon(canSell(getUser()));
 
             }
         });

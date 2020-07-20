@@ -4,6 +4,8 @@ import cards.Card;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
 import static administer.Constants.NORMAL_CARD_HEIGHT;
 import static administer.Constants.NORMAL_CARD_WIDTH;
@@ -24,7 +26,7 @@ public class CardView extends JPanel {
         this.y = y;
         this.width = width;
         this.height = height;
-        setBounds(x,y,width,height);
+        setBounds(x, y, width, height);
         setOpaque(false);
         setBorder(BorderFactory.createEmptyBorder());
         setLayout(null);
@@ -33,7 +35,7 @@ public class CardView extends JPanel {
         mana.setFont(new Font("American Typewriter", Font.PLAIN, 25));
         mana.setBounds(25, 20, 28, 30);
         add(mana);
-        if (!card.getType().equals("Spell")){
+        if (!card.getType().equals("Spell")) {
             JLabel hp = new JLabel(String.valueOf(card.getHP()));
             hp.setForeground(Color.WHITE);
             hp.setFont(new Font("American Typewriter", Font.PLAIN, 25));
@@ -46,13 +48,13 @@ public class CardView extends JPanel {
             add(attack);
         }
 
-//        this.addMouseListener(new MouseAdapter() {
-//            @Override
-//            public void mouseReleased(MouseEvent e) {
-//                // do something
-//                clickListener.onClick();
-//            }
-//        });
+        this.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseReleased(MouseEvent e) {
+                // do something
+                clickListener.onClick();
+            }
+        });
 
         JLabel lblNewLabel = new JLabel();
         lblNewLabel.setIcon(new ImageIcon(cardPath(card)));
@@ -60,15 +62,6 @@ public class CardView extends JPanel {
         add(lblNewLabel);
 
 
-    }
-
-
-    public ClickListener getClickListener() {
-        return clickListener;
-    }
-
-    public void setClickListener(ClickListener clickListener) {
-        this.clickListener = clickListener;
     }
 
     public Card getCard() {
@@ -83,27 +76,13 @@ public class CardView extends JPanel {
     public int getX() {
         return x;
     }
-
-    public void setX(int x) {
-        this.x = x;
-    }
-
     @Override
     public int getY() {
         return y;
     }
-
-    public void setY(int y) {
-        this.y = y;
-    }
-
     @Override
     public int getWidth() {
         return width;
-    }
-
-    public void setWidth(int width) {
-        this.width = width;
     }
 
     @Override
@@ -111,7 +90,4 @@ public class CardView extends JPanel {
         return height;
     }
 
-    public void setHeight(int height) {
-        this.height = height;
-    }
 }

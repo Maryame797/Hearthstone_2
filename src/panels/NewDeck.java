@@ -12,7 +12,6 @@ import java.io.File;
 import static administer.Administer.getUser;
 import static administer.Administer.saveInFile;
 import static logs.Log.addToBody;
-import static panels.CardsPanel.getCardButton;
 import static panels.DecksPanel.*;
 
 public class NewDeck extends JFrame {
@@ -58,8 +57,6 @@ public class NewDeck extends JFrame {
                     setDeckIcon();
                     dispose();
                 }else {
-                    for (int i = 0; i < getCardButton().length; i++)
-                        getCardButton()[i].setIcon(null);
                     getNewDeck().setText("Finish");
                     setCreateDeck(true);
                     String deckName = textField.getText();

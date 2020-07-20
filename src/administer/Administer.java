@@ -1,4 +1,5 @@
 package administer;
+
 import cards.Card;
 import characters.Warlock;
 import panels.MainMenu;
@@ -6,6 +7,7 @@ import panels.StartPanel;
 import player.Player;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
@@ -16,12 +18,14 @@ import java.io.*;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
+
 import static administer.Constants.FRAME_HEIGHT;
 import static administer.Constants.FRAME_WIDTH;
 import static cards.Card.getAllCards;
 import static logs.Log.addToBody;
 import static logs.Log.setHeader;
 import static panels.StartPanel.*;
+
 public class Administer {
     private static JPanel panel;
     private static JFrame frame;
@@ -66,11 +70,11 @@ public class Administer {
 
                 user = new Player();
                 String pass = Long.toString(password.hashCode());
-                getCreateTime(user);
+                getCreateTime();
                 user.setUserName(name);
                 user.setPassword(pass);
                 setHeader(user);
-                firstCards(user);
+                firstCards();
                 user.getOpenHeroes().add(new Warlock());
                 user.setCurrentHero(new Warlock());
                 user.setGems(50);
@@ -162,44 +166,35 @@ public class Administer {
         return imageIcon;
     }
 
-    public static ArrayList<Card> canBeInDeck(Player user) {
-        ArrayList<Card> canBeInDeck = new ArrayList<>();
-        for (int j = 0; j <= 1; j++) {
-            for (int i = 0; i < user.getCurrentCards().size(); i++) {
-                if (user.getCurrentCards().get(i).getHeroClass().equals("Neutral") || user.getCurrentCards().get(i).getHeroClass().equals(user.getCurrentDeck().getHero().getName()))
-                    canBeInDeck.add(user.getCurrentCards().get(i));
-            }
-        }
-        if (user.getCurrentDeck().getCardsInDeck().size() != 0)
-            for (int i = 0; i < user.getCurrentDeck().getCardsInDeck().size(); i++) {
-                canBeInDeck.remove(user.getCurrentDeck().getCardsInDeck().get(i));
-            }
-        return canBeInDeck;
+    public static boolean canBeInDeck(Card card) {
+        if (foundCount(user.getCurrentDeck().getCardsInDeck(), card) < 2 && (card.getHeroClass().equals("Neutral") || card.getHeroClass().equals(user.getCurrentDeck().getHero().getName())))
+            return true;
+        else return false;
     }
 
-    public static void addInDeck(Player user, String cardName) {
+    private static int foundCount(ArrayList<Card> list, Card card) {
+        int count = 0;
+        for (Card o :
+                list) {
+            if (o == card) count++;
+        }
+        return count;
+    }
+
+    public static void addInDeck(Card card) {
         if (user.getCurrentDeck().getCardsInDeck().size() == 15) {
             JOptionPane.showMessageDialog(null, "Sorry! Your deck is full.");
         } else {
-            boolean flag = false;
-            for (int i = 0; i < canBeInDeck(user).size(); i++) {
-                if (cardName.equals(canBeInDeck(user).get(i).getName())) {
-                    addToBody("add to " + user.getCurrentDeck().getName(), "card: " + canBeInDeck(user).get(i).getName() + " :" + user.getCurrentHero().getName(), user);
-                    user.getCurrentDeck().getCardsInDeck().add(canBeInDeck(user).get(i));
-                    JOptionPane.showMessageDialog(null, "Successfully added!");
-                    flag = true;
-                    break;
-                }
+            if (canBeInDeck(card)) {
+                addToBody("add to " + user.getCurrentDeck().getName(), "card: " + card.getName() + " :" + user.getCurrentHero().getName(), user);
+                user.getCurrentDeck().getCardsInDeck().add(card);
+                JOptionPane.showMessageDialog(null, "Successfully added!");
             }
-            if (flag == false) {
-                JOptionPane.showMessageDialog(null, "You can't add this card to your deck.");
-                addToBody("invalid_command", "collections", user);
-            }
-            saveInFile();
         }
+        saveInFile();
     }
 
-    public static void removeFromDeck(Player user, String cardName) {
+    public static void removeFromDeck(String cardName) {
         boolean flag = false;
         for (int i = 0; i < user.getCurrentDeck().getCardsInDeck().size(); i++) {
             if (user.getCurrentDeck().getCardsInDeck().get(i).getName().equals(cardName)) {
@@ -216,7 +211,7 @@ public class Administer {
         saveInFile();
     }
 
-    public static void firstCards(Player user) {
+    public static void firstCards() {
         ArrayList<Card> firstCards = new ArrayList<>();
         firstCards.add(getAllCards().get(2));
         firstCards.add(getAllCards().get(3));
@@ -231,7 +226,7 @@ public class Administer {
         user.setCurrentCards(firstCards);
     }
 
-    public static void getCreateTime(Player user) {
+    public static void getCreateTime() {
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
         LocalDateTime now = LocalDateTime.now();
         String a = dtf.format(now).substring(2, 4) + dtf.format(now).substring(5, 7) + dtf.format(now).substring(8, 10) + dtf.format(now).substring(11, 13) + dtf.format(now).substring(14, 16) + dtf.format(now).substring(17);

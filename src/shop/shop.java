@@ -51,11 +51,11 @@ public class shop {
         return canBuy;
     }
 
-    public static void buyCard(Player user, int i) throws IndexOutOfBoundsException {
-        addToBody("buy","card: "+ canBuy(user).get(i).getName(),user);
-            if (user.getGems()>=canBuy(user).get(i).getPrice() ){
-                user.setGems(user.getGems()-canBuy(user).get(i).getPrice());
-               user.getCurrentCards().add(canBuy(user).get(i));
+    public static void buyCard(Player user, Card card) throws IndexOutOfBoundsException {
+        addToBody("buy","card: "+card.getName(),user);
+            if (user.getGems()>=card.getPrice() ){
+                user.setGems(user.getGems()-card.getPrice());
+               user.getCurrentCards().add(card);
                saveInFile();
             }
         }

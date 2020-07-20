@@ -361,14 +361,13 @@ public class Collections extends JPanel{
             buttons[i].setVisible(false);
     }
 
-    public static void goToShop(String cardName){
-        for (int i = 0 ; i < canBuy(getUser()).size(); i++){
-            if(canBuy(getUser()).get(i).getName().equals(cardName)){
-                addToBody("Click_Button","Card_Button",getUser());
+    public static void goToShop(Card card){
+        addToBody("Click_Button","Card_Button",getUser());
+            if(canBuy(getUser()).contains(card)){
                 setPanelOnFrame(new ShopPanel(),getFrame());
                 cardsToBuy();
+
             }
-        }
     }
 
     public static void setExitButton(JPanel panel){
